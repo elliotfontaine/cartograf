@@ -42,7 +42,18 @@ horizontal_alignment = 1
 [node name="InputActionsList" parent="VBoxContainer/InputMappingContainer" node_paths=PackedStringArray("input_icon_mapper") instance=ExtResource("4_lf2nw")]
 unique_name_in_owner = true
 layout_mode = 2
+action_groups = 2
+input_action_names = Array[StringName]([&"move_up", &"move_down", &"move_left", &"move_right", &"interact", &"attack"])
+readable_action_names = Array[String](["Move Up", "Move Down", "Move Left", "Move Right", "Interact", "Attack"])
 input_icon_mapper = NodePath("../../../InputIconMapper")
+action_name_map = {
+&"attack": "Attack",
+&"interact": "Interact",
+&"move_down": "Move Down",
+&"move_left": "Move Left",
+&"move_right": "Move Right",
+&"move_up": "Move Up"
+}
 
 [node name="InputActionsTree" parent="VBoxContainer/InputMappingContainer" node_paths=PackedStringArray("input_icon_mapper") instance=ExtResource("5_b2whh")]
 unique_name_in_owner = true
