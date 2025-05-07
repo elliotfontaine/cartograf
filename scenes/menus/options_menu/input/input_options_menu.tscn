@@ -5,3 +5,6 @@
 
 [node name="Controls" instance=ExtResource("1_i27v5")]
 script = ExtResource("2_hyv0n")
+
+[node name="InputActionsList" parent="VBoxContainer/InputMappingContainer" index="1"]
+action_groups = 2
